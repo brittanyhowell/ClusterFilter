@@ -1,5 +1,9 @@
 #!/bin/bash
 
-for clus in cluster* ; do
-	mv ${clus} ${clus}.fasta
+
+for i in *.afa; do 
+
+	filename=${i%.afa}
+	sed s/:/_/g $i | sed s/\(/_/g | sed s/\)//g > ${filename}.form.afa
+
 done
