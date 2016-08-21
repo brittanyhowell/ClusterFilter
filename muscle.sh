@@ -8,7 +8,7 @@
 #SBATCH -N 1 
 #SBATCH -n 8 
 #SBATCH --time=0-04:00
-#SBATCH --mem=20GB 
+#SBATCH --mem=40GB 
 
 # Notification configuration 
 #SBATCH --mail-type=END                                         
@@ -21,8 +21,6 @@ module load MUSCLE/3.8.31
 
 cd ${ClusDIR}
 
-echo "aligning cluster ${1}"
-
-	muscle -in cluster_${1}.fasta -out ${MuscleOUT}/cluster_${1}.afa
-
-echo "complete cluster ${1}"
+echo "aligning cluster ${1}_${2}"
+	muscle -in cluster_${1}_95_${2}.fasta -out ${MuscleOUT}/cluster_${1}_95_${2}.afa 
+echo "complete cluster ${1}_${2}"
