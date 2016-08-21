@@ -6,15 +6,17 @@ clusDIR=${splitDir}/clusters
 resultsDir=${splitDir}/OutputInformation
 
 # Run information
-cluster="3"
+cluster="0"
 id=".95"
+idName="95"
 minClustSize="20"
 resultsTable=results_${cluster}_${id}.uc
 
 # Output files:
+ClustSeqs="${clusDIR}/cluster_${cluster}_${idName}_"
 AllClust="clusterList_${cluster}_${id}.txt"
 Min20="clusterList_min${minClustSize}_${cluster}_${id}.txt"
-SummTable="clusterNumbers.txt"
+SummTable="clusterNumbersSecond.txt"
 
 
 # Clustering
@@ -27,7 +29,8 @@ else
 	echo "Making ${resultsTable}"  
 fi 
 
-usearch -cluster_fast cluster_${cluster}.fasta -id ${id} -clusters ${clusDIR}/cluster_${cluster}_${id}_ -uc ${resultsTable}
+usearch -cluster_fast cluster_${cluster}.fasta -id ${id} -clusters ${ClustSeqs} -uc ${resultsTable}
+
 
 mv ${resultsTable} ${resultsDir}
 
