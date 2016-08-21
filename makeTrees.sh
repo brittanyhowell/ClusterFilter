@@ -27,7 +27,10 @@ fi
 
 echo "making trees" 
 for iAlign in *form.afa; do 
-filename=${i%.form.afa}
+
+filename=${iAlign%.form.afa}
+echo ""
+echo "making tree for ${filename}"
 	fasttree -nt ${iAlign} > ${filename}.tree
 	mv ${filename}.tree ${TreeDIR}
 done
