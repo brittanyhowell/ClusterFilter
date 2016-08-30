@@ -5,10 +5,10 @@
 WkDIR=/data/rc003/Brittany/Clusters
 # CLUSTERS=("0" "1" "3" "4" "5" "13")
 # BigClus="0"
-# CLUSTERS=("0" "1" "3" "5")
-# BigClus="1"
-CLUSTERS=("0" "1" "3" "5" "7" "48" "99")
-BigClus="3"
+CLUSTERS=("2")
+BigClus="1"
+# CLUSTERS=("2")
+# BigClus="3"
 
 # Move into working directory
 cd ${WkDIR}

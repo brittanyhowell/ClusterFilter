@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd /Users/brittanyhowell/Documents/University/Honours_2016/Project/ClusterFilter/ClusFromActive/clusters
 
 for i in *.afa; do 
 
