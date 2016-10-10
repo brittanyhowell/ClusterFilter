@@ -1,1 +1,0 @@
-bam intersect - atma's bed file and the 
