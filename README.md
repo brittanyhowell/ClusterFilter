@@ -1,19 +1,21 @@
-ClusterFilter
+# ClusterFilter
 
+## Summary:
 This repo clusters sequences then filters them. It runs pretty nicely into the "findGaps" repo (https://github.com/brittanyhowell/findGaps)
 
+#### Input/Output
 Input: 		Fasta sequences, patience
 Output: 	Tree files, some BED files of clustered elements
 
-Script Purposes:
+#### Script Purposes:
 
-getClusterData.sh: 	Invokes usearch to cluster provided FASTA sequences.
+- getClusterData.sh: 	Invokes usearch to cluster provided FASTA sequences.
 
-runMuscle.sh: 		Submits muscle.sh jobs for specified clusters.
-muscle.sh:			Invokes MUSCLE on Phoenix. 
-renameHeader.sh:	Substitutes friendly characters in for non-friendly ones (tree builders are fussy).
-makeTrees: 			Invokes fasttree.
+- runMuscle.sh: 		Submits muscle.sh jobs for specified clusters.
+- muscle.sh:			Invokes MUSCLE on Phoenix. 
+- renameHeader.sh:	Substitutes friendly characters in for non-friendly ones (tree builders are fussy).
+- makeTrees: 			Invokes fasttree.
 
-FastaRename.sh:		Changes file suffixes.
-makeBED.sh: 		Converts fasta output from clusters into BED files.
+- FastaRename.sh:		Changes file suffixes.
+- makeBED.sh: 		Converts fasta output from clusters into BED files.
 
