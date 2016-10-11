@@ -1,6 +1,6 @@
 ClusterFilter
 
-This repo clusters sequence, then it filters them. It runs pretty nicely into the "findGaps" repo (https://github.com/brittanyhowell/findGaps)
+This repo clusters sequences then filters them. It runs pretty nicely into the "findGaps" repo (https://github.com/brittanyhowell/findGaps)
 
 Input: 		Fasta sequences, patience
 Output: 	Tree files, some BED files of clustered elements
